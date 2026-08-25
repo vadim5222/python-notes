@@ -1,35 +1,35 @@
-# class Swimmer:
-#     def swim(self):
-#         print('Плыву')
+class Swimmer:
+    def swim(self):
+        print('Плыву')
 
-# class Runner:
-#     def run(self):
-#         print('Бегу')
+class Runner:
+    def run(self):
+        print('Бегу')
 
-# class Triathlet(Swimmer, Runner):
-#     pass
-
-
-# t = Triathlet()
-# t.run()
-# t.swim()
+class Triathlet(Swimmer, Runner):
+    pass
 
 
+t = Triathlet()
+t.run()
+t.swim()
 
-# class A:
-#     def hello(self):
-#         print('A')
 
-# class B(A):
-#     def hello(self):
-#         print('B')
 
-# class C(A):
-#     def hello(self):
-#         print('C')
+class A:
+    def hello(self):
+        print('A')
 
-# class D(B, C):
-#     pass
+class B(A):
+    def hello(self):
+        print('B')
 
-# D().hello()
-# print(D.__mro__)
+class C(A):
+    def hello(self):
+        print('C')
+
+class D(B, C):
+    pass
+
+D().hello()
+print(D.__mro__)
